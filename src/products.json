@@ -1,0 +1,50 @@
+[
+    {
+        "img": "https://placeimg.com/640/480/tech?x=65456766",
+        "name": "Hot tech",
+        "price": "50",
+        "sku": "34ef7g78",
+        "category": "Electronics",
+        "inventory": 56
+    },
+    {
+        "img": "https://placeimg.com/640/480/tech?x=7577",
+        "name": "Cutting Edge Device",
+        "price": "30",
+        "sku": "5trktergr",
+        "category": "Electronics",
+        "inventory": 56
+    },
+   {
+        "img": "https://placeimg.com/640/480/tech?x=4569867",
+        "name": "Intel Inside",
+        "price": "60",
+        "sku": "44ttrty4564he",
+        "category": "Electronics",
+        "inventory": 56
+    },
+    {
+        "img": "https://placeimg.com/640/480/tech?x=123",
+        "name": "The new Apple smart device",
+        "price": "40",
+        "sku": "6jrth45",
+        "category": "Electronics",
+        "inventory": 56
+    },
+    {
+        "img": "https://placeimg.com/640/480/tech?x=434",
+        "name": "OPen Compute",
+        "price": "20",
+        "sku": "gh35yh4h",
+        "category": "Electronics",
+        "inventory": 56
+    },
+    {
+        "img": "https://placeimg.com/640/480/tech?x=456",
+        "name": "Digital Device",
+        "price": "10",
+        "sku": "g3g3g34g3",
+        "category": "Electronics",
+        "inventory": 56
+    }
+]

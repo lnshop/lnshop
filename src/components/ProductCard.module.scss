@@ -1,0 +1,38 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+    border-radius: 20px 0;
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+    font-weight:bold;
+    margin: 20px 0;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-bottom-right-radius: 20px;
+  }
+  
+  button:hover {
+    opacity: 0.7;
+  }
+
+  img{
+    width:100%;
+    border-radius: 20px 0;
+  }
+}
