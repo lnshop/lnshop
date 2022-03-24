@@ -1,0 +1,11 @@
+.columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    flex: 33%;
+    margin: 40px 0;
+  }
