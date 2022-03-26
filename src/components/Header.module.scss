@@ -4,7 +4,9 @@
     background: $dark;
     width: 100%;
     height: $headerHeight;
-    padding: 0 1.5rem;
+    padding: 0 ;
+    position: fixed;
+    top: 0px;
     @include breakpoint(md) {
         padding: 0 3rem;
     }
