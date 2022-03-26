@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home";
 import LNInvoice from "./pages/LNInvoice";
 import PageTwo from "./pages/PageTwo";
-import PageThree from "./pages/PageThree";
+import Success from "./pages/Success";
 import PageCTA from "./pages/PageCTA";
 import { Cart, CartContext, Product, Products, ProductsContext } from './Context';
 import React, { SetStateAction, useEffect } from "react";
@@ -65,7 +65,7 @@ function App() {
                         <Route path="/" element={<Home />} />
                         <Route path="/ln-invoice" element={<LNInvoice />} />
                         <Route path="/page-two" element={<PageTwo />} />
-                        <Route path="/page-three" element={<PageThree />} />
+                        <Route path="/success" element={<Success />} />
                         <Route path="/page-cta" element={<PageCTA />} />
                     </Routes>
                 </Layout>
