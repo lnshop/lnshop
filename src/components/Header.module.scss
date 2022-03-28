@@ -1,7 +1,7 @@
 @import "./../styles/variables.scss";
 
 .header {
-    background: $dark;
+    background: $light;
     width: 100%;
     height: $headerHeight;
     padding: 0 1.5rem;
@@ -9,10 +9,29 @@
         padding: 0 3rem;
     }
     transition: 0.3s ease all;
+    border-bottom: 0.05rem solid $linecolor;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+
+    .badge{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: $primary;
+        color: $light;
+        border-radius: 50%;
+        padding: 0.3rem 0.6rem;
+        font-size: 0.1rem;
+        @include breakpoint(md) {
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+        }
+    }
 
     &__content {
         overflow: hidden;
-        color: $light;
+        color: $dark;
         margin: 0 auto;
         max-width: 1920px;
         height: 100%;
@@ -23,10 +42,15 @@
         z-index: 100;
 
         &__logo {
-            font-size: 2rem;
-            font-weight: bold;
+            font-size: 1rem;
             text-decoration: none;
-            color: $light;
+            color: $dark;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            img {
+                height: 64px;
+            }
         }
 
         &__nav {
@@ -74,6 +98,9 @@
                             margin-right: $spacing-md;
                         }
                     }
+                    .cart {
+                        font-size: 1.5rem;
+                    }
                     a {
                         text-decoration: none;
                         color: inherit;
@@ -81,7 +108,7 @@
                         border-radius: $borderRadius;
                         transition: 0.3s ease all;
 
-                        &:hover {
+                        &:hover {   
                             background: rgba($light, 0.1);
                         }
                         &:active {
