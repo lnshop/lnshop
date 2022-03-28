@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 
 import { BiMenuAltRight } from "react-icons/bi";
 import { AiOutlineClose } from "react-icons/ai";
+import { GrCart } from "react-icons/gr";
+import logo from "../pages/logo.png"
 
 import classes from "./Header.module.scss";
 import { Link, useNavigate } from "react-router-dom";
@@ -48,7 +50,7 @@ const Header = () => {
         <header className={classes.header}>
             <div className={classes.header__content}>
                 <Link to="/" className={classes.header__content__logo}>
-                    LNShop - Tech Store
+                    <img src={logo} /> <div></div>
                 </Link>
                 <nav
                     className={`${classes.header__content__nav} ${
@@ -66,8 +68,12 @@ const Header = () => {
                                 Contact Us
                             </Link>
                         </li>
+                        <li >
+                            <Link className={classes.cart} to="/page-cta" onClick={menuToggleHandler}>
+                                <GrCart /><div className={classes.badge}>{cart.length}</div>
+                            </Link>
+                        </li>
                     </ul>
-                    <button onClick={ctaClickHandler}>Cart({cart.length})</button>
                 </nav>
                 <div className={classes.header__content__toggle}>
                     {!menuOpen ? (

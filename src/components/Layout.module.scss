@@ -13,3 +13,33 @@
         border-radius: $borderRadius calc(#{$borderRadius} * 10);
     }
 }
+
+.spacer{
+    height: $headerHeight;
+}
+
+
+/* The hero image */
+.heroImage {
+    /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.01)), url("../pages/banner.png");
+  
+    /* Set a specific height */
+    height: 50%;
+  
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+  
+  /* Place text in the middle of the image */
+  .heroText {
+    text-align: right;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: white;
+    font-size: 16px;
+  }

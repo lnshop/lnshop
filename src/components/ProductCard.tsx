@@ -11,10 +11,11 @@ const ProductCard = (props: any) => {
   return (
     <div className={classes.card}>
         <img src={props.product.img} alt="product" />
-        <h2>{props.product.name}</h2>
-        <p className={classes.price}>{props.product.price} Sats</p>
-        <p>Take this pet home with you today.</p>
-        <p><button onClick={(e) => add(props.product)}>Add to Cart</button></p>
+        <div className={classes.cardHeader}>
+          <span className={classes.title}>{props.product.name}</span>
+          <p className={classes.price}>{props.product.price} Sats</p>
+        </div>
+        <button onClick={(e) => add(props.product)}>Add to Cart</button>
     </div>
   )
 }
