@@ -1,5 +1,6 @@
 {
   "name": "lnshop",
+  "homepage":"https://lnshop.github.io/lnshop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
