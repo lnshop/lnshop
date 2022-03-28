@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/lnshop/static/css/main.cdd11869.css",
+    "main.js": "/lnshop/static/js/main.f1d8bea0.js",
+    "static/media/banner.png": "/lnshop/static/media/banner.9a1e0d7c251b98fe3e26.png",
+    "index.html": "/lnshop/index.html",
+    "main.cdd11869.css.map": "/lnshop/static/css/main.cdd11869.css.map",
+    "main.f1d8bea0.js.map": "/lnshop/static/js/main.f1d8bea0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cdd11869.css",
+    "static/js/main.f1d8bea0.js"
+  ]
+}
