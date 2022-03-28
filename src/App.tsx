@@ -8,7 +8,7 @@ import PageCTA from "./pages/PageCTA";
 import { Cart, CartContext, Product, Products, ProductsContext } from './Context';
 import React, { SetStateAction, useEffect } from "react";
 import productFile from "./products.json";
-
+import Airtable from 'airtable';
 
 function App() {
     const [cart, setCart] = React.useState([] as Cart);
@@ -48,11 +48,45 @@ function App() {
     }
     const [products, setProducts] = React.useState([] as Products     );
 
-    const getProducts=()=>{
-        console.log("first time");
+    const getProducts=async ()=>{
+        console.log("compare below");
         console.log(productFile);
+        let pr = await getProductsFromAirtable()
+        console.log(pr);
+        console.log("compare below");
           setProducts(productFile as SetStateAction<Products>);
     }
+
+    const getProductsFromAirtable=()=>{
+        var base = new Airtable({apiKey: 'key2jHRYjdc5tCgYn'}).base('appRJdZDlKqnCx42O');
+        let table = [] as any;
+        base('Inventory').select({
+            // Selecting the first 3 records in Grid view:
+            maxRecords: 3,
+            view: "Grid view"
+        }).eachPage(function page(records, fetchNextPage) {
+            // This function (`page`) will get called for each page of records.
+
+            records.forEach(function(record) {
+                console.log('Retrieved', record.fields);
+                table.push(record.fields);
+            });
+
+            // To fetch the next page of records, call `fetchNextPage`.
+            // If there are more records, `page` will get called again.
+            // If there are no more records, `done` will get called.
+            fetchNextPage();
+
+        }, function done(err) {
+            if (err) { console.error(err); return; }
+        });
+        return table;
+    }
+
+    
+    
+
+
     useEffect(()=>{
       getProducts()
     },[])
